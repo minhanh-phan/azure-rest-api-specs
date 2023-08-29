@@ -127,19 +127,12 @@ interface SchemaOperations {
 
 alias NoContentResponse<T> = TypeSpec.Http.Response<204> & T;
 
-union SchemaContentTypeValues {
-  avro: "application/json; serialization=Avro",
-  json: "application/json; serialization=json",
-  custom: "text/plain; charset=utf-8",
-  @added(ServiceApiVersions.v2023_07_01)
-  protobuf: "text/vnd.ms.protobuf",
-}
 
 @doc("The content type for given schema. Each schema type has an associated content-type.")
 model SchemaContentType {
   @doc("The content type for given schema.")
   @header("Content-Type")
-  contentType: SchemaContentTypeValues;
+  contentType: "application/json; serialization=Avro";
 }
 
 @doc("Content of the schema.")
