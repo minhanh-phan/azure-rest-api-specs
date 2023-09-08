@@ -36,7 +36,7 @@ model AudioTranscriptionOptionsVerboseJson {
 
     @doc("The format of the transcription output, in one of these options: json, text, srt, verbose_json, or vtt.")
     @projectedName("json", "response_format")
-    responseFormat?: AudioTranscriptionFormat = AudioTranscriptionFormat.verboseJson;
+    responseFormat: AudioTranscriptionFormat = AudioTranscriptionFormat.verboseJson;
 }
 
 @doc("This will make the response return the transcription as plain/text.")
@@ -46,7 +46,7 @@ model AudioTranscriptionOptionsPlainText {
 
     @doc("The format of the transcription output, in one of these options: json, text, srt, verbose_json, or vtt.")
     @projectedName("json", "response_format")
-    responseFormat?: AudioTranscriptionFormat = AudioTranscriptionFormat.text;
+    responseFormat: AudioTranscriptionFormat = AudioTranscriptionFormat.text;
 }
 
 @doc("The transcription will be provided in SRT format (SubRip Text) in the form of plain/text.")
@@ -56,7 +56,7 @@ model AudioTranscriptionOptionsSrt {
 
     @doc("The format of the transcription output, in one of these options: json, text, srt, verbose_json, or vtt.")
     @projectedName("json", "response_format")
-    responseFormat?: AudioTranscriptionFormat = AudioTranscriptionFormat.srt;
+    responseFormat: AudioTranscriptionFormat = AudioTranscriptionFormat.srt;
 }
 
 @doc("The transcription will be provided in VTT format (Web Video Text Tracks) in the form of plain/text.")
@@ -66,5 +66,5 @@ model AudioTranscriptionOptionsVtt {
 
     @doc("The format of the transcription output, in one of these options: json, text, srt, verbose_json, or vtt.")
     @projectedName("json", "response_format")
-    responseFormat?: AudioTranscriptionFormat = AudioTranscriptionFormat.vtt;
+    responseFormat: AudioTranscriptionFormat = AudioTranscriptionFormat.vtt;
 }
