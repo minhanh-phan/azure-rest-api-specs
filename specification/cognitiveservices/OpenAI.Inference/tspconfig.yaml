@@ -32,6 +32,7 @@ options:
     package-dir: "openai"
     generateMetadata: false
     generateTest: false
+    hierarchyClient: false
     isModularLibrary: true
     packageDetails:
       name: "@azure/openai"
