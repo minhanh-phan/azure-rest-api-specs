@@ -33,6 +33,8 @@ options:
     generateMetadata: false
     generateTest: false
     hierarchyClient: false
+    enableOperationGroup: false
+    enableModelNamespace: false
     isModularLibrary: true
     packageDetails:
       name: "@azure/openai"
